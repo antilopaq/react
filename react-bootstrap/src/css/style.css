@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*card*/
+.card-text-main {
+  border: rgb(0, 0, 0), solid, 2px;
+}
+
+.card-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+hr.solid {
+  border-top: 3px solid rgb(0, 0, 0);
+  display: inline;
+}
+/*linie text*/
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-nav {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: 'inherit';
+  font-family: 'Roboto', sans-serif;
+}
+
+.color-nav{
+    background-image: linear-gradient(to right ,rgb(36, 106, 211), rgb(36, 211, 202));
+    border-bottom: black solid 2px; 
+}
+
+.btn-flat:hover{
+    background-color: #1490ce;
+    border: #1490ce solid;
+    color: rgb(255, 255, 255);
+}
+
+.btn-flat{
+    background-color: #0071ab;
+    border: #0071ab solid;
+    color: rgb(255, 255, 255);
+}
+/*.btn-flat:hover{
+  background-color: rgb(250, 250, 250);
+  color: rgb(0, 0, 0);
+}
+
+.btn-flat{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}*/
+
+@media only screen and (max-width: 768px) {
+  .card-width {
+    width: 15rem;
+  }
+}
+
+.borderless {
+  border: none;
+}
+
+.weather {
+  padding: 0;
+  text-decoration-style: none;
+  list-style-type: none;
+  margin-left: 10px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+ul li {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+}
+
+ul li img {
+  vertical-align: middle;
+}
+
+.black-background {
+  background-color: black;
+}
+
+.text-jumbotron {
+  background-color: rgb(236, 148, 16);
+}
+
+.text-jumbotron2 {
+  background-color: rgb(86, 19, 211);
+}
+
+.background-red {
+  background: linear-gradient(222deg, #1f55ff, #021c6e);
+  margin: 0;
+}
+.background-yellow {
+  background: linear-gradient(222deg, #1f55ff, #021c6e);
+  margin: 0;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+  text-decoration: wavy;
+}
+
+.red:hover {
+  background-color: lightcoral;
+  border-radius: 30px;
+  border: 2px solid lightcoral;
+  color: rgb(255, 255, 255);
+  text-decoration:wavy;
+}
+
+.black-red {
+  color: 0071ab;
+  text-decoration: wavy;
+}
+
+.black-red:hover {
+  background-color: #e2d6d6;
+  border-radius: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-decoration:wavy;
+}
+
+
+.black {
+  color: black;
+  text-decoration:wavy;
+}
+
+.black:hover {
+  color: black;
+  text-decoration:wavy;
+}
+
+/*efect card*/ 
+.photoHover:hover {
+  transform: scale(1.03);
+}
+
+.zoomed {
+  transform:scale(1.04);
+}
+
+/*text pentru buton card*/
+.white, .white:hover {
+    color: white;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.right-align{
+  font-size: 14px;
+  text-align: start;
+}
+
+.text-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.h1-flat {
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.p-carousel {
+    color: white;
+    font-weight: 550;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+Link:focus, Link:hover, Link:visited, Link:link, Link:active {
+    color: black;
+    text-decoration: none;
+}
+/* w3schools pentru social media buttons */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
